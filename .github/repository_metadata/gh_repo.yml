@@ -1,0 +1,12 @@
+meta-data:
+  repository_name: publish_python_package_template
+  visibility: public
+  org-name: RyoNakagami
+  tag:
+    - Python
+    - uv
+    - pypi
+    - testpypi
+  description: |
+    A template for publishing Python packages with uv and testpypi support.
+  license: mit

@@ -1,0 +1,33 @@
+[project]
+name = "publish_python_package101"
+authors = [
+    {name = "Ryo Nakagami", email = "nakagamiryo0901@gmail.com"},
+]
+version = "0.1.1"
+description = " A lightweight system and resource monitor for Python applications."
+readme = "README.md"
+requires-python = ">=3.11"
+dependencies = []
+
+[project.urls]
+Homepage = "https://github.com/RyoNakagami/lightweight-sysmonitor"
+Issues = "https://github.com/RyoNakagami/lightweight-sysmonitor/issues"
+
+[build-system]
+requires = ["uv_build>=0.9.11,<0.10.0"]
+build-backend = "uv_build"
+
+[tool.uv.build-backend]
+module-name = "publish_python_package101"
+namespace = true
+
+[[tool.uv.index]]
+name = "testpypi"
+url = "https://test.pypi.org/simple/"
+publish-url = "https://test.pypi.org/legacy/"
+explicit = true
+
+[dependency-groups]
+dev = [
+    "pytest>=9.0.1",
+]
